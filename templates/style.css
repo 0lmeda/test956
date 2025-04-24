@@ -1,0 +1,102 @@
+/* fill this code */
+
+body{
+    margin: 0px;
+    padding: 0%;
+<<<<<<< HEAD
+    background: linear-gradient(to right, #f0f4f8, #ffffff);
+    color: #212529;
+
+}
+/*what*/
+
+.uploadContainer {
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.uploadContainer h3{
+    text-align: center;
+    color: #333;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-top: 1vh;
+}
+
+input[type=text], input[type=file], textarea{
+    width: 100%;
+    font-family: inherit;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+button{
+    display: block;
+    margin: 0 auto;
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+  }
+
+.topNav{
+    background-color: rgba(30, 26, 27, 0.86);
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topNav h1 {
+ 
+  font-size: 1.8rem;
+=======
+}
+
+
+
+.topnav{
+    background-color: rgba(30, 26, 27, 0.86);
+    overflow: hidden;
+>>>>>>> b8c33406dff43907d01f4e00b9383152bb015da5
+}
+
+.introductionContainer{
+
+<<<<<<< HEAD
+    padding: 0vh 20%;
+    background-color: #ffffff;
+    border-radius: 1vh;
+    margin-top: 2vh;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+}
+
+p {
+    font-weight: 700;
+    color: #212529;
+  }
+
+=======
+    margin: 0vh 20%;
+}
+>>>>>>> b8c33406dff43907d01f4e00b9383152bb015da5

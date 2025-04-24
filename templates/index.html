@@ -1,0 +1,96 @@
+<!-- flask servers are more senstive with html files, make sure all the attributes are correct or you will recieve constant errors! -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- fill this part -->
+    <title> buddies.com </title> <!-- change the name idk --> 
+    <!-- im going to leave like that, Idk what a good name would be for this lol-->
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- mainly coded for computers, fuck phone websites -->
+    <!--but mobiles are the 65% of the internet traffic :p-->
+   
+    <!-- to change the style find style sheets in the folder -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+<!-- fill this part also -->
+<<<<<<< HEAD
+    <div class="topNav" id="nav">
+        <h1> Website </h1>
+    </div>
+
+
+    <div class="introductionContainer">
+        <p>This webiste is gonna be like a blog or something like dat, not sure about it</p>
+    </div>
+
+=======
+    
+    <div class="topnav" id="nav">
+        <h1> Website</h1>    
+
+
+    </div>
+
+    
+    <div class="introductionContainer">
+
+        <p class="int">Welcome to this website, prolly this is gonna be a blog or something like dat, not sure about this</p>
+        
+    </div>
+
+    
+>>>>>>> b8c33406dff43907d01f4e00b9383152bb015da5
+
+    <div class="post_input">
+
+
+        <form method="POST" enctype="multipart/form-data">
+            <div class="uploadContainer">
+                <h3>Submit a post!</h3>
+                <label for="title">Title</label>
+                <input type="text" name="title" placeholder="Title" class="title_input" required />
+
+                <label for="image">Image</label>
+                <input type="file" name="image" accept="image/*" required />
+                <label for="description">Comment</label>
+                <textarea  name="description" placeholder="//Type something" class="description_input"> </textarea>
+    
+                <button type="submit"> Post </button>
+            </div>
+
+        </form>
+    </div>
+
+    
+    <!-- forum container, use the ids to style them in style.css -->
+
+    <div class="postyPostContainer" id="postContainer">
+        {% if posts %}
+
+        {% for post in posts %}
+        <div class="post">
+            <h2 class="title"> {{post.title}}</h2>
+            <img src="{{ post.image }}" alt="{{ post.title }}" class="src_image"/>
+            <p class="posty_des"> {{ post.description }}</p>
+        </div>
+        {% endfor %}
+
+        {% else %}
+        <p>No posts here yet</p>
+        {% endif %}
+    </div>
+    <!-- this part is for the forum post that interacts with the py file, would not recommmend to mess with unless you are experinced with these interactions -->
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
+
